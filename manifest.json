@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Twitch Cleaner",
   "version": "1.1",
-  "description": "Hide showcase, chat, and enable minimal mode on Twitch.",
+  "description": "Hide showcase and enable minimal mode on Twitch.",
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
