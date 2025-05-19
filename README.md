@@ -17,7 +17,6 @@ twitch-cleaner/
 ├── popup.html
 ├── popup.js
 ├── popup.css
-├── styles.css (optional)
 ├── _locales/
 │   ├── en/
 │   │   └── messages.json
