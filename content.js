@@ -1,12 +1,3 @@
-fetch(chrome.runtime.getURL("twitch.css"))
-  .then(res => res.text())
-  .then(css => {
-    const style = document.createElement("style");
-    style.textContent = css;
-    document.head.appendChild(style);
-  });
-
-
 function hideSections(prefs) {
   // Ocultar el carrusel de la portada
   const showcaseContainer = document.querySelector('div[data-a-target="front-page-carousel"]');
