@@ -1,0 +1,14 @@
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Chrome Extension packaging
+*.zip

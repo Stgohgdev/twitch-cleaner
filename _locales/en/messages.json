@@ -1,0 +1,11 @@
+{
+  "extensionName": {
+    "message": "Twitch Cleaner"
+  },
+  "hideShowcaseLabel": {
+    "message": "Hide showcase"
+  },
+  "minimalModeLabel": {
+    "message": "Minimal mode"
+  }
+}
