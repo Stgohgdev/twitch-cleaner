@@ -3,7 +3,7 @@
   "name": "Twitch Cleaner",
   "version": "1.1",
   "description": "Hide showcase and enable minimal mode on Twitch.",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -26,10 +26,9 @@
   },
   "default_locale": "en",
   "web_accessible_resources": [
-  {
-    "resources": ["twitch.css"],
-    "matches": ["<all_urls>"]
-  }
-]
-
+    {
+      "resources": ["twitch.css"],
+      "matches": ["*://*.twitch.tv/*"]
+    }
+  ]
 }
