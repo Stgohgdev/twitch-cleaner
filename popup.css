@@ -1,16 +1,40 @@
-body {
+:root {
+  --bg-color: #18181b;
+  --text-color: #efeff1;
+  --option-bg: #2e2e35;
+  --option-hover: #3c3c44;
+  --accent-color: #9146FF;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #1f1f23;
+    --option-bg: #f4f4f4;
+    --option-hover: #e6e6e6;
+  }
+}
+
+html, body {
   margin: 0;
-  padding: 12px;
-  width: 175px;
-  background-color: #0e0e10;
-  color: #efeff1;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  
-  border: 2px solid #9146FF;
-  box-shadow: 0 0 8px rgba(145, 70, 255, 0.5);
+  padding: 0;
   overflow: hidden;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+body {
+  width: 200px;
+  padding: 12px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 8px rgba(145, 70, 255, 0.5);
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: relative;
 }
 
 /* Título */
@@ -18,7 +42,7 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-color);
   margin: 0;
   position: relative;
   z-index: 1;
@@ -30,7 +54,7 @@ h1::after {
   width: 100%;
   height: 1px;
   margin: 6px auto 0;
-  background: linear-gradient(to right, transparent, #9146FF, transparent);
+  background: linear-gradient(to right, transparent, var(--accent-color), transparent);
   border-radius: 1px;
 }
 
@@ -52,7 +76,7 @@ body::before {
 .option {
   display: flex;
   align-items: center;
-  background-color: #1f1f23;
+  background-color: var(--option-bg);
   border-radius: 8px;
   padding: 8px 10px;
   transition: background-color 0.3s ease;
@@ -62,11 +86,11 @@ body::before {
 }
 
 .option:hover {
-  background-color: #26262c;
+  background-color: var(--option-hover);
 }
 
 input[type="checkbox"] {
-  accent-color: #9146FF;
+  accent-color: var(--accent-color);
   transform: scale(1.2);
   margin-right: 8px;
 }
@@ -74,22 +98,6 @@ input[type="checkbox"] {
 label {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: var(--text-color);
   cursor: pointer;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border-radius: 12px;
-}
-html {
-  background-color: transparent;
-}
-html {
-  overflow: hidden;
-}
-
-
-
-
